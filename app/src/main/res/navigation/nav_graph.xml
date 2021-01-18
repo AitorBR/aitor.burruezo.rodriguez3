@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_second1Fragment"
+            app:destination="@id/second1Fragment" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
@@ -36,5 +39,18 @@
         <action
             android:id="@+id/action_thirdFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_thirdFragment_to_third1Fragment"
+            app:destination="@id/third1Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/second1Fragment"
+        android:name="cat.copernic.finall.aitor.burruezo.rodriguez.Second1Fragment"
+        android:label="fragment_second1"
+        tools:layout="@layout/fragment_second1" />
+    <fragment
+        android:id="@+id/third1Fragment"
+        android:name="cat.copernic.finall.aitor.burruezo.rodriguez.Third1Fragment"
+        android:label="fragment_third1"
+        tools:layout="@layout/fragment_third1" />
 </navigation>

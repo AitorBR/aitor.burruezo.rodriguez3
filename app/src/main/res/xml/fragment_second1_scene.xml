@@ -8,35 +8,31 @@
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
        <KeyFrameSet>
-           <KeyPosition
-               motion:motionTarget="@+id/btn_ThirdToMain"
+           <KeyAttribute
+               motion:motionTarget="@+id/Mario23"
                motion:framePosition="0"
-               motion:keyPositionType="deltaRelative" />
+               android:translationX="30dp" />
        </KeyFrameSet>
         <OnClick />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-            android:layout_height="wrap_content"
-            motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="wrap_content"
-            android:id="@+id/btn_Third1"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            motion:layout_constraintVertical_bias="0.08"
-            android:layout_height="182dp"
+            motion:layout_constraintVertical_bias="0.938"
+            android:layout_height="211dp"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintHorizontal_bias="0.924"
+            motion:layout_constraintHorizontal_bias="0.867"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="200dp"
-            android:id="@+id/img_globo" />
+            android:layout_width="139dp"
+            android:id="@+id/Mario23" />
     </ConstraintSet>
+    <ConstraintSet android:id="@+id/otro" />
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/otro" />
 </MotionScene>
